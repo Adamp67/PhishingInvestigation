@@ -1,0 +1,42 @@
+Return-Path: <bounce@paypa1-alerts.example>
+From: "PayPal Security" <service@paypal.com>
+To: victim@company.example
+Subject: URGENT: Your account has been suspended
+Date: Mon, 05 Oct 2026 09:14:22 +0000
+Message-ID: <12345@paypa1-alerts.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUNDARY_MAIN"
+
+--BOUNDARY_MAIN
+Content-Type: multipart/alternative; boundary="BOUNDARY_ALT"
+
+--BOUNDARY_ALT
+Content-Type: text/plain; charset="utf-8"
+
+Dear Customer,
+
+We detected unusual activity. Your account will be closed within 24 hours.
+Verify your identity now: http://paypa1-verify.example/login?id=8842.
+Or visit our backup page: https://secure-update.example.net/account
+
+PayPal Security Team
+
+--BOUNDARY_ALT
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>Your account will be closed within 24 hours.</p>
+<p><a href="http://paypa1-verify.example/login?id=8842">Verify Now</a></p>
+</body></html>
+
+--BOUNDARY_ALT--
+
+--BOUNDARY_MAIN
+Content-Type: application/octet-stream; name="Invoice_8842.pdf.exe"
+Content-Disposition: attachment; filename="Invoice_8842.pdf.exe"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHRlc3QgZmlsZS4=
+
+--BOUNDARY_MAIN--
